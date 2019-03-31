@@ -9,10 +9,10 @@ from fuzzywuzzy import fuzz
 from scipy import stats
 from sklearn.cluster import KMeans
 
-from sofa_common import *
-from sofa_config import *
-from sofa_print import *
-from STree import *
+from sofa.sofa_common import *
+from sofa.sofa_config import *
+from sofa.sofa_print import *
+from sofa.STree import *
 
 table_size = 0
 iteration_timelines = []
