@@ -7,14 +7,16 @@ before_install:
   - sudo apt-get install software-properties-common -y
   - sudo add-apt-repository ppa:deadsnakes/ppa -y
   - sudo apt-get update -y
-  - sudo apt-get install python3.6 python3.6-dev python3-pip -y
+  - sudo apt-get install python3.6 python3.6-dev python3-pip  python3.6-venv -y
   - sudo apt-get install -y curl wget make gcc g++ cmake
   - sudo apt-get install -y linux-tools-common tcpdump sysstat strace
   - sudo apt-get install -y linux-tools-generic linux-cloud-tools-generic
 install:
   - ./tools/empower-tcpdump.sh $(whoami)
-  - python3 -m pip install setuptools
-  - python3 setup.py install 
+  - python3.6 -m venv ~/venv && source ~/venv/bin/activate
+  - python -m pip install --upgrade pip
+  - python -m pip install setuptools
+  - python -m pip install . 
 script:
   - sudo sysctl -w kernel.kptr_restrict=0
   - sudo sysctl -w kernel.perf_event_paranoid=-1   
