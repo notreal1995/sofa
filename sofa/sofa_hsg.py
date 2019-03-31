@@ -15,10 +15,10 @@ import pandas as pd
 from fuzzywuzzy import fuzz
 from sklearn.cluster import KMeans
 
-from sofa_common import *
-from sofa_config import *
-from sofa_models import SOFATrace
-from sofa_print import *
+from sofa.sofa_common import *
+from sofa.sofa_config import *
+from sofa.sofa_models import SOFATrace
+from sofa.sofa_print import *
 
 sofa_fieldnames = [
     "timestamp",  # 0

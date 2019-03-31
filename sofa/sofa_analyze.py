@@ -14,11 +14,11 @@ import numpy as np
 import pandas as pd
 import requests
 import time
-from sofa_aisi import *
-from sofa_common import *
-from sofa_config import *
-from sofa_hsg import *
-from sofa_print import *
+from sofa.sofa_aisi import *
+from sofa.sofa_common import *
+from sofa.sofa_config import *
+from sofa.sofa_hsg import *
+from sofa.sofa_print import *
 
 
 def payload_sum(df):

@@ -17,7 +17,7 @@ import pandas as pd
 import numpy as np
 import re
 
-from sofa_print import *
+from sofa.sofa_print import *
 
 
 def service_get_cpuinfo(logdir):

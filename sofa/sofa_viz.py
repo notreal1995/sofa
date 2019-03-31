@@ -3,8 +3,8 @@ import subprocess
 import sys
 from functools import partial
 
-from sofa_config import *
-from sofa_print import *
+from sofa.sofa_config import *
+from sofa.sofa_print import *
 
 
 def sofa_viz(cfg):

@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 import scipy
 
-from sofa_config import *
-from sofa_print import *
+from sofa.sofa_config import *
+from sofa.sofa_print import *
 
 
 def overlap(pa, pb, pc, pd):

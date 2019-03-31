@@ -18,10 +18,10 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from sqlalchemy import create_engine
 
-from sofa_config import *
-from sofa_hsg import sofa_hsg, sofa_hsg_to_sofatrace
-from sofa_models import SOFATrace
-from sofa_print import *
+from sofa.sofa_config import *
+from sofa.sofa_hsg import sofa_hsg, sofa_hsg_to_sofatrace
+from sofa.sofa_models import SOFATrace
+from sofa.sofa_print import *
 
 sofa_fieldnames = [
     "timestamp",  # 0
