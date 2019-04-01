@@ -33,12 +33,13 @@ def create_cuhello():
 
     dir_path = os.path.dirname(os.path.abspath(__file__))
     src_path = '{}/tools'.format(dir_path)
-    cmd = "nvcc {}cuhello.cu -o {}/sofa/cuhello".format(src_path, dir_path)
+    cmd = "nvcc {}/cuhello.cu -o {}/sofa/cuhello".format(src_path, dir_path)
 
     try:
-        subprocess.run(cmd, cwd=src_path, shell=True, stdout=subprocess.PIPE)
+        subprocess.check_call(cmd, cwd=src_path, shell=True, stdout=subprocess.PIPE)
     except subprocess.CalledProcessError:
         print("No nvcc found; nvcc is required to improve perf timestamp accuracy.")
+        pass
 
 
 
