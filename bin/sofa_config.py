@@ -10,6 +10,7 @@ class Filter:
 class SOFA_Config:
     cpu_filters = []
     gpu_filters = []
+    strace_filters = []
     net_filters = []
     perf_events = 'cycles'
     verbose = False
